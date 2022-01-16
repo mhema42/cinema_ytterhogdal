@@ -1,0 +1,25 @@
+{
+    "name": "kino-ytterhogdal",
+    "version": "1.0.0",
+    "description": "",
+    "main": "bundle.js",
+    "scripts": {
+        "watch:js": "webpack --watch",
+        "watch:sass": "sass --watch --no-source-map src/main.scss main.css",
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/matodorovic/kino-ytterhogdal.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "sass": "^1.43.4",
+        "webpack-cli": "^4.9.1"
+    },
+    "dependencies": {
+        "vscode": "^1.1.37",
+        "webpack": "^5.65.0"
+    }
+}
