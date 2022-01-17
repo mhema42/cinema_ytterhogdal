@@ -1,25 +1,27 @@
 {
-    "name": "kino-ytterhogdal",
-    "version": "1.0.0",
-    "description": "",
-    "main": "bundle.js",
-    "scripts": {
-        "watch:js": "webpack --watch",
-        "watch:sass": "sass --watch --no-source-map src/main.scss main.css",
-        "start": "node app.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/matodorovic/kino-ytterhogdal.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "sass": "^1.43.4",
-        "webpack-cli": "^4.9.1"
-    },
-    "dependencies": {
-        "vscode": "^1.1.37",
-        "webpack": "^5.65.0"
-    }
+  "name": "kino_ytterhogdal_mv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon .",
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhema42/cinema_ytterhogdal.git"
+  },
+  "author": "mhema@telia.com Mats Hemå",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhema42/cinema_ytterhogdal/issues"
+  },
+  "homepage": "https://github.com/mhema42/cinema_ytterhogdal#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "fs": "0.0.1-security",
+    "nodemon": "^2.0.15"
+  }
 }
