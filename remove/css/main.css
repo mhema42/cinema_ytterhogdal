@@ -129,7 +129,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   float: left;
-  margin: 10px 20px 0 30px;
+  margin: 10px 20px 0 40px;
   width: 90px;
 }
 
@@ -348,95 +348,6 @@ Author: Mats Hemå &  Marta Anna Todorovic */
   100% {
     opacity: 1;
   }
-}
-
-/* Kino-webbplats med filmer från API - Ytterhogdal
-Author: Mats Hemå */
-.movies-nav {
-  background-color: #000;
-}
-
-.movies-nav .movies-menu {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  height: 40px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0;
-  margin: auto;
-  width: 60%;
-}
-
-.movies-nav .movies-menu li {
-  list-style-type: none;
-}
-
-.movies-nav .movies-menu li .menu-text {
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-}
-
-.movies-nav .movies-menu li .menu-text:hover {
-  color: #d4af37;
-}
-
-.movies-nav .movies-menu li .menu-text:focus {
-  color: #d4af37;
-}
-
-.movies-nav .movies-menu li .menu-active {
-  color: #d4af37;
-}
-
-.movies-space {
-  background-color: #BB0000;
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-  padding: 40px 0px 40px 0px;
-}
-
-.movies-space .all-movies {
-  margin: auto;
-  width: 70%;
-}
-
-.movies-space .all-movies img {
-  -webkit-box-shadow: 0px 0px 15px 1px black;
-          box-shadow: 0px 0px 15px 1px black;
-  float: none;
-  margin: 0;
-  width: 600px;
-}
-
-.movies-space .popular-movies {
-  margin: auto;
-  width: 70%;
-}
-
-.movies-space .current-movies {
-  margin: auto;
-  width: 70%;
-}
-
-.movies-space .upcoming-movies {
-  margin: auto;
-  width: 70%;
-}
-
-.movies-space .movies-hide {
-  display: none;
 }
 
 body {

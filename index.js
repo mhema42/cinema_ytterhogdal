@@ -9,14 +9,6 @@ app.get("/", async (request, response) => {
     response.send(filebuf);
 });
 
-app.get("/:name", async (request, response) => {
-    const name = request.params.name;
-    const filebuf = await fs.readFile("./files/index.html");
-    const content = filebuf.toString().replace("Populära", name);
-    response.type("html");
-    response.send(content);
-});
-
 app.get("/*", async (request, response) => {
     try {
         const fileName = request.path;
@@ -28,6 +20,14 @@ app.get("/*", async (request, response) => {
     } catch (err) {
         response.status(404).end();
     }
+});
+
+app.get("/:name", async (request, response) => {
+    const name = request.params.name;
+    const filebuf = await fs.readFile("./files/index.html");
+    const content = filebuf.toString().replace("Populära", name);
+    response.type("html");
+    response.send(content);
 });
 
 // using express we can get the same result (and more) with this code

@@ -27,4 +27,6 @@ document.querySelector(".menu-faq").addEventListener("click", () => {
   activeAndHide(); 
   document.querySelector(".menu-faq").classList.add("menu-active");
   document.querySelector(".about-us-faq").classList.remove("about-us-hide");
-});
+}); 
+
+
