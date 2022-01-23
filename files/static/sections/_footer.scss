@@ -4,7 +4,8 @@ Author: Mats Hemå */
 footer {
     background-color: $third-color; // change to sass variables
     color: $secondary-color; // change to sass variables
-    font-family: $font-choice; 
+    font-family: $font-choice;
+    height: 190px; 
 
     h2 {
         font-size: large;

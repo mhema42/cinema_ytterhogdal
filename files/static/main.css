@@ -7,6 +7,7 @@ footer {
   background-color: #000;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
+  height: 190px;
   /* Arbetsmetodik och Agila projektmetoder - Ytterhogdal
     Author: Marta Anna Todorovic */
 }
@@ -299,7 +300,7 @@ Author: Mats Hemå &  Marta Anna Todorovic */
       -ms-flex-align: center;
           align-items: center;
   background-color: #000;
-  height: 35px;
+  height: 40px;
   font-size: 1.2rem;
 }
 
@@ -400,8 +401,9 @@ Author: Mats Hemå */
 }
 
 .movies-nav p {
+  font-size: 22px;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
 .movies-menu {
@@ -496,16 +498,17 @@ Author: Mats Hemå */
 .movie-space .movie-info {
   margin: auto;
   text-align: center;
-  width: 30%;
+  width: 250px;
 }
 
 .movie-space .movie-info img {
   float: none;
   margin: 20px auto;
-  width: 250px;
+  width: 240px;
 }
 
 body {
   margin: 0;
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */
