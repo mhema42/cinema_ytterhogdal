@@ -1,0 +1,29 @@
+<nav class="about-us-nav">
+    <ul class="about-us-menu">
+        <li><a class="menu-text menu-history menu-active" href="#">Historia</a></li>
+        <li><a class="menu-text menu-policy" href="#">Policy</a></li>
+        <li><a class="menu-text menu-accessibility" href="#">Tillgänglighet</a></li>
+        <li><a class="menu-text menu-faq" href="#">FAQ</a></li>
+    </ul>
+</nav>
+
+<div class="about-us-space">
+    <div class="about-us-history about-us-item">
+        {{>aboutus/history}}
+    </div>
+
+    <div class="about-us-policy about-us-item about-us-hide">
+        {{>aboutus/policy}}
+    </div>
+
+    <div class="about-us-accessibility about-us-item about-us-hide">
+        {{>aboutus/access}}
+    </div>
+
+    <div class="about-us-faq about-us-item about-us-hide">
+        {{>aboutus/faq}}
+    </div>
+</div>
+
+<script src="./src/aboutus.js"></script>
+<script src="https://kit.fontawesome.com/955d716fd8.js" crossorigin="anonymous"></script>

@@ -4,8 +4,8 @@ Author: Marta Anna Todorovic */
 /* Arbetsmetodik och Agila projektmetoder - Ytterhogdal
 Author: Mats Hemå */
 footer {
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   /* Arbetsmetodik och Agila projektmetoder - Ytterhogdal
     Author: Marta Anna Todorovic */
@@ -242,11 +242,12 @@ Author: Mats Hemå &  Marta Anna Todorovic */
 
 .about-us-space {
   background-color: #BB0000;
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  padding: 40px 0px 40px 0px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 560px;
+  padding: 30px 0px 30px 0px;
 }
 
 .about-us-space .about-us-history {
@@ -352,11 +353,58 @@ Author: Mats Hemå &  Marta Anna Todorovic */
 
 /* Kino-webbplats med filmer från API - Ytterhogdal
 Author: Mats Hemå */
-.movies-nav {
-  background-color: #000;
+.no-movie, .movies-nav, .menu-text, .movie-space {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.movies-nav .movies-menu {
+.no-movie {
+  background-color: #BB0000;
+  color: #000;
+  min-height: 650px;
+  text-align: center;
+}
+
+.no-movie h1 {
+  margin: 0;
+  padding-top: 200px;
+  -webkit-animation: blink 2s ease-out;
+          animation: blink 2s ease-out;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.movies-nav {
+  background-color: #000;
+  color: #fff;
+  height: 40px;
+  text-align: center;
+}
+
+.movies-nav p {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.movies-menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -371,48 +419,54 @@ Author: Mats Hemå */
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0;
   margin: auto;
   width: 60%;
 }
 
-.movies-nav .movies-menu li {
+.movies-menu li {
   list-style-type: none;
 }
 
-.movies-nav .movies-menu li .menu-text {
+.movies-menu li .menu-text {
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
 
-.movies-nav .movies-menu li .menu-text:hover {
+.movies-menu li .menu-text:hover {
   color: #d4af37;
 }
 
-.movies-nav .movies-menu li .menu-text:focus {
+.movies-menu li .menu-text:focus, .movies-menu li .menu-active {
   color: #d4af37;
 }
 
-.movies-nav .movies-menu li .menu-active {
-  color: #d4af37;
-}
-
-.movies-space {
+.movie-space {
   background-color: #BB0000;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  padding: 40px 0px 40px 0px;
+  padding: 30px 0px 20px 0px;
+  min-height: 560px;
 }
 
-.movies-space .all-movies {
+.movie-space .all-movies-list {
+  font-size: 20px;
   margin: auto;
-  width: 70%;
+  text-align: center;
+  width: 60%;
 }
 
-.movies-space .all-movies img {
+.movie-space .all-movies-list li {
+  list-style: none;
+  padding: 10px;
+}
+
+.movie-space .all-movies-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.movie-space .all-movies-list img {
   -webkit-box-shadow: 0px 0px 15px 1px black;
           box-shadow: 0px 0px 15px 1px black;
   float: none;
@@ -420,23 +474,35 @@ Author: Mats Hemå */
   width: 600px;
 }
 
-.movies-space .popular-movies {
+.movie-space .popular-movies-list {
   margin: auto;
   width: 70%;
 }
 
-.movies-space .current-movies {
+.movie-space .current-movies-list {
   margin: auto;
   width: 70%;
 }
 
-.movies-space .upcoming-movies {
+.movie-space .upcoming-movies-list {
   margin: auto;
   width: 70%;
 }
 
-.movies-space .movies-hide {
+.movie-space .movies-hide {
   display: none;
+}
+
+.movie-space .movie-info {
+  margin: auto;
+  text-align: center;
+  width: 30%;
+}
+
+.movie-space .movie-info img {
+  float: none;
+  margin: 20px auto;
+  width: 250px;
 }
 
 body {

@@ -1,0 +1,37 @@
+<nav class="movies-nav">
+    <ul class="movies-menu">
+        <li><a class="menu-text menu-all-movies menu-active" href="#">Alla filmer</a></li>
+        <li><a class="menu-text menu-popular-movies" href="#">Populära filmer</a></li>
+        <li><a class="menu-text menu-current-movies" href="#">Aktuella filmer</a></li>
+        <li><a class="menu-text menu-upcoming-movies" href="#">Kommande filmer</a></li>
+    </ul>
+</nav>
+
+<div class="movie-space">
+    <div class="all-movies-list movies-item">
+        <ul>
+            {{#each movies }}
+            <li>
+                <a href="/movies/{{ this.id }}">
+            {{ this.title }}
+            </a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="popular-movies-list movies-item movies-hide">
+        {{>movies/popular}}
+    </div>
+
+    <div class="current-movies-list movies-item movies-hide">
+        {{>movies/current}}
+    </div>
+
+    <div class="upcoming-movies-list movies-item movies-hide">
+        {{>movies/upcuming}}
+    </div>
+</div>
+
+<script src="./src/moviePage.js"></script>
+<script src="https://kit.fontawesome.com/955d716fd8.js" crossorigin="anonymous"></script>

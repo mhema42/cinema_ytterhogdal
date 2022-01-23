@@ -29,6 +29,7 @@
     "handlebars": "^4.7.7",
     "marked": "^4.0.10",
     "marker": "^0.1.2",
+    "node-fetch": "^3.2.0",
     "webpack": "^5.66.0"
   }
 }

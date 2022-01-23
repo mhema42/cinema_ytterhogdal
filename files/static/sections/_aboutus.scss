@@ -1,10 +1,10 @@
-/* Kino-webbplats med filmer från API - Ytterhogdal
-Author: Mats Hemå */    
+/* Arbetsmetodik och Agila projektmetoder - Ytterhogdal
+Author: Mats Hemå &  Marta Anna Todorovic */
 
-.movies-nav {
+.about-us-nav {
     background-color: $third-color;
 
-    .movies-menu {
+    .about-us-menu {
         align-items: center;
         display: flex;
         flex-direction: row;
@@ -38,14 +38,16 @@ Author: Mats Hemå */
     }
 }
 
-.movies-space {
+.about-us-space {
     background-color: $primary-color;
+    box-sizing: inherit;
     color: $secondary-color;
     font-family: $font-choice;
-    box-sizing: inherit;
-    padding: 40px 0px 40px 0px;
+    min-height: 560px;
+    padding: 30px 0px 30px 0px;
+    
 
-    .all-movies {
+    .about-us-history {
         margin: auto;
         width: 70%;
     
@@ -57,22 +59,22 @@ Author: Mats Hemå */
         }
     }
 
-    .popular-movies {
+    .about-us-accessibility {
         margin: auto;
         width: 70%;
     }
 
-    .current-movies {
+    .about-us-policy {
         margin: auto;
         width: 70%;
     }
 
-    .upcoming-movies {
+    .about-us-faq {
         margin: auto;
         width: 70%;
     }
 
-    .movies-hide {
+    .about-us-hide {
         display: none;
     }
 }

@@ -2,9 +2,9 @@
 Author: Mats Hemå */
 
 footer {
-    background-color: black; // change to sass variables
-    color: white; // change to sass variables
-    font-family: Arial, Helvetica, sans-serif; 
+    background-color: $third-color; // change to sass variables
+    color: $secondary-color; // change to sass variables
+    font-family: $font-choice; 
 
     h2 {
         font-size: large;

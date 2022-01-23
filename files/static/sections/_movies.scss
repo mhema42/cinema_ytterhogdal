@@ -1,0 +1,142 @@
+/* Kino-webbplats med filmer från API - Ytterhogdal
+Author: Mats Hemå */    
+
+.no-movie, .movies-nav, .menu-text, .movie-space {
+    font-family: $font-choice;
+}
+
+.no-movie {
+    background-color: $primary-color;
+    color: $third-color;
+    min-height: 650px;
+    text-align: center;
+
+    h1 {
+        margin: 0;
+        padding-top: 200px;
+        animation: blink 2s ease-out;
+
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            } 
+            20% {
+                opacity: 1;
+            }
+            40% {
+                opacity: 0;
+            }
+            60% {
+                opacity: 1;
+            }
+            80% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.movies-nav {
+    background-color: $third-color;
+    color: $secondary-color;
+    height: 40px;
+    text-align: center;
+
+    p {
+        margin: 0;
+        padding-top: 10px;
+    }
+}
+
+.movies-menu {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    justify-content: space-between;
+    margin: auto;
+    width: 60%;
+
+    li {
+        list-style-type: none;
+
+        .menu-text {
+            color: $secondary-color;
+            text-decoration: none;
+
+            &:hover {
+                color: $fourth-color;
+            }
+        }
+
+        .menu-text:focus, .menu-active {
+            color: $fourth-color;
+        }
+    }
+}
+
+.movie-space {
+    background-color: $primary-color;
+    color: $secondary-color;
+    box-sizing: inherit;
+    padding: 30px 0px 20px 0px;
+    min-height: 560px;
+
+    .all-movies-list {
+        font-size: 20px;
+        margin: auto;
+        text-align: center;
+        width: 60%;
+
+        li {
+            list-style: none;
+            padding: 10px;
+
+            a {
+                color: $secondary-color;
+                text-decoration: none;
+            }
+        }
+    
+        img {
+            box-shadow: 0px 0px 15px 1px black;
+            float: none;
+            margin: 0;
+            width: 600px;
+        }
+    }
+
+    .popular-movies-list {
+        margin: auto;
+        width: 70%;
+    }
+
+    .current-movies-list {
+        margin: auto;
+        width: 70%;
+    }
+
+    .upcoming-movies-list {
+        margin: auto;
+        width: 70%;
+    }
+
+    .movies-hide {
+        display: none;
+    }
+
+    .movie-info {
+        margin: auto;
+        text-align: center;
+        width: 30%;
+
+        img {
+            float: none;
+            margin: 20px auto;
+            width: 250px;
+        }
+    }
+}

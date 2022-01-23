@@ -1,34 +1,46 @@
 import express from "express";
-import fs from "fs/promises"
 import { engine } from "express-handlebars";
 import { marked } from "marked";
+import { loadMovie, loadMovies } from "./files/src/movies.js";
 
 const app = express();
 
-app.engine("handlebars", engine({
+app.engine("hbs", engine({
     helpers: {
       markdown: md => marked(md),
     },
-    defaultLayout: "main",
+    defaultLayout: "index",
+    extname: '.hbs',
     partialsDir: "files/templates/partials"
   }));
 
-app.set("view engine", "handlebars");
+app.set("view engine", "hbs");
 app.set("views", "./files/templates");
 
 app.get("/", async (req, res) => {
-    res.render("index");
+    res.render("main");
   });
 
 app.get("/movies", async (req, res) => {
-    res.render("movies");
+  const movies = await loadMovies();
+  res.render("partials/movies", { movies });
+});
+
+app.get("/movies/:movieId", async (req, res) => {
+  const movie = await loadMovie(req.params.movieId);
+  if (movie) {
+    res.render("partials/movies/movie", { movie });
+  } else {
+    res.status(404).render("partials/movies/404");
+  }
 });
 
 app.get("/aboutus", async (req, res) => {
-  res.render("aboutus");
+  res.render("partials/aboutus");
 });
 
-app.use(express.static("./files/static"));
-app.use(express.static("./files"))
+app.use(express.static("./files"));
 
 app.listen(5080);
+
+export default app;
